@@ -367,7 +367,7 @@ if ( typeof window.console.emulated === 'undefined' ) {
 				var History = $.History;
 
 				// Modify the document
-				$(document).ready(function() {
+				$(function() {
 					// Prepare the document
 					History.domReady();
 				});
@@ -404,7 +404,7 @@ if ( typeof window.console.emulated === 'undefined' ) {
 				History.$window = $(window);
 
 				// Apply the hashchange function
-				History.$window.bind('hashchange', this.hashchange);
+				History.$window.on('hashchange', this.hashchange);
 
 				// Force hashchange support for all browsers
 				setTimeout(History.hashchangeLoader, 200);

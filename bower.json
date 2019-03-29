@@ -1,0 +1,16 @@
+{
+	"name": "jQueryHistory",
+	"license": [
+		"MIT"
+	],
+	"main": [
+		"./scripts/jquery.history.js"
+	],
+	"dependencies": {
+		"jquery": "latest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/alecksey/jquery-history.git"
+	}
+}
